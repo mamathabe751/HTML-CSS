@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="table_script.js"></script>
+</head>
+<body>
+<style>
+td {
+ width:26%;
+}
+#new_fname{
+margin-left:20px;
+}
+#new_lname{
+margin-left:10px;
+}
+#new_phone{
+margin-left:30px;
+}
+#new_email{
+margin-left:30px;
+}
+#new_emp{
+margin-left:30px;
+}
+</style>
+<div>
+<form align="center">
+    &nbsp;<b>FirstName </b>  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="new_fname"> <br><br>
+    &nbsp;&nbsp;&nbsp;<b>LastName </b>:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="new_lname"><br><br>
+&nbsp;&nbsp;<b>PhoneNumber </b>  :<input type="text" id="new_phone"><br><br>
+&nbsp;<b>EmailID </b>  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="new_email"><br><br>
+&nbsp;&nbsp;<b>EmployeeID  </b> :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="new_emp"><br><br>
+<input type="button" class="add" onclick="add_row();" value="Submit">
+</form>
+</div> 
+<br>
+
+
+<div id="wrapper">
+<table align='center' cellspacing=1 cellpadding=8 id="data_table" border=1 >
+<tr>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Phone</th>
+<th>EmailID</th>
+<th>EmployeeID</th>
+</tr>
+
+<tr id="row1">
+<td id="fname_row1">Yashu</td>
+<td id="lname_row1">M</td>
+<td id="phone_row1">990123456</td>
+<td id="email_row1">xyz@gmail.com</td>
+<td id="emp_row1">JSE22</td>
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+
+
+</table>
+</div>
+</body>
+</html>
